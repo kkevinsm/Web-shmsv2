@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\tbl_shm;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $lt1 = tbl_shm::first();
+        
+        return view('home', compact([
+            'lt1'
+        ]));
     }
 }

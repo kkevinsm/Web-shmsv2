@@ -11,3 +11,4 @@
     <!-- Need: Apexcharts -->
     <script src="{{asset ('dist/assets/extensions/apexcharts/apexcharts.min.js') }}"></script>
     <script src="{{asset ('dist/assets/static/js/pages/dashboard.js') }}"></script>
+    <script src="{{asset ('dist/assets/static/js/initTheme.js') }}"></script>
