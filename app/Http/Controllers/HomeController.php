@@ -24,7 +24,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $lt1 = tbl_shm::first();
+        // $lt1 = tbl_shm::first();
+        // $lt1 = tbl_shm::orderBy('created_at', 'desc')->first();
+        $lt1 = tbl_shm::orderBy('id', 'desc')->first();
+
         
         return view('home', compact([
             'lt1'
