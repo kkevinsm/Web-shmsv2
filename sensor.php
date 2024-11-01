@@ -1,9 +1,9 @@
 <?php
 
 $hostname = "localhost";
-$username = "coba";
-$password = "sandi";
-$database = "shmsv2";
+$username = "root";
+$password = "";
+$database = "shmsv2ke2";
 
 $conn = mysqli_connect($hostname, $username, $password, $database);
 

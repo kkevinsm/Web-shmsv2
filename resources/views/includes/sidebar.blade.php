@@ -17,6 +17,12 @@
                     <i class="fa-solid fa-temperature-low"></i> 
                     <span>Temperature Log</span>
                 </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="post" 
+                    style="display: none;">
+                        @csrf
+                    </form>
+
+            </li>   
                 
             <li
                 class="sidebar-item  ">
